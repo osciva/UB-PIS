@@ -1,0 +1,67 @@
+<resources>
+    <string name="app_name">V&amp;M</string>
+    <string name="registrarse">Registrarse</string>
+    <string name="email">Email</string>
+    <string name="contrasena">Contraseña</string>
+    <string name="apodo">Apodo</string>
+    <string name="img_perfil">Imagen de Perfil</string>
+    <string name="insert_img">Añadir imagen</string>
+    <string name="inicio_sesion">Iniciar Sesión</string>
+    <string name="cuenta_existe">Ya tiene cuenta?</string>
+    <string name="buscar_base">Encuentra la base que deseas</string>
+
+    <string name="vibes_and_music">Vibes &amp; Music</string>
+
+    <string name="usuario">Usuario</string>
+    <string name="introduce_usuario">Introduce el nombre de usuario</string>
+    <string name="siguiente">Siguiente</string>
+    <string name="ajustes">Ajustes</string>
+    <string name="guardar">Guardar</string>
+    <string name="cerrar_sesion">Cerrar Sesión</string>
+
+    <string name="title_activity_main2">MainActivity2</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <string name="listado_de_bases">Listado De Bases</string>
+    <string name="estudio">Estudio</string>
+    <string name="crear_base">Crear Base</string>
+    <string name="letras">Letras</string>
+    <string name="buttonPlayFirstBase">Button</string>
+    <string name="Audio001">Audio001</string>
+    <string name="BeatBox">BeatBox</string>
+    <string name="PruebaSonido">PruebaSonido</string>
+    <string name="AudioDefinitivo">AudioDefinitivo</string>
+    <string name="SadSounds">SadSounds</string>
+    <string name="GoodVibesOnly">GoodVibesOnly</string>
+    <string name="ExplosionSound">ExplosionSound</string>
+    <string name="HogRiderSound">HogRiderSound</string>
+    <string name="Username">Username</string>
+    <string name="Email">Email</string>
+    <string name="Inicio">Inicio</string>
+    <string name="Estudio">Estudio</string>
+    <string name="Listado_De_Bases">Listado_De_Bases</string>
+    <string name="Bases">Bases</string>
+    <string name="Creación">Creación</string>
+    <string name="Letras">Letras</string>
+    <string name="Inicio_inicio">Inicio_inicio</string>
+    <string name="Audios">Audios</string>
+
+    <string name="pause_button_description">Pause audio button</string>
+    <string name="play_button_description">Play audio button</string>
+    <string name="element_text">Item text</string>
+    <string name="time">Time</string>
+
+    <string name="verificaConstrasena">Verificar Constraseña</string>
+    <string name="repiteConstrasena">Repetir Contraseña</string>
+    <string name="letra_escogida">Letra escogida</string>
+    <string name="letra">Letra</string>
+    <string name="intoduce_el_nombre_de_la_letra">Intoduce el nombre de la letra</string>
+</resources>

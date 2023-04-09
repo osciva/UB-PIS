@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="Color_Base">#F85F6A</color>
+    <color name="Color_Base_Aux">#F83744</color>
+    <color name="Color_Secundario">#35424A</color>
+    <color name="Color_Tercero">#78909C</color>
+    <color name="Color_Gris_Claro">#EEF0F2</color>
+    <color name="Boto00">#91E4FB</color>
+    <color name="Boto01">#A8C6FA</color>
+    <color name="Boto02">#b38df7</color>
+    <color name="Boto03">#e692f8</color>
+    <color name="Boto04">#f6a2bf</color>
+    <color name="Boto05">#ffb4b0</color>
+    <color name="Boto06">#ffc3ae</color>
+    <color name="Boto10">#00c8f8</color>
+    <color name="Boto11">#3d8af7</color>
+    <color name="Boto12">#6335e3</color>
+    <color name="Boto13">#c238eb</color>
+    <color name="Boto14">#e93578</color>
+    <color name="Boto15">#ff5d55</color>
+    <color name="Boto16">#ff8351</color>
+    <color name="Boto20">#00a4d3</color>
+    <color name="Boto21">#1663f6</color>
+    <color name="Boto22">#5126ad</color>
+    <color name="Boto23">#9c2ab7</color>
+    <color name="Boto24">#bb265c</color>
+    <color name="Boto25">#ff3822</color>
+    <color name="Boto26">#ff6622</color>
+    <color name="Boto30">#006e8c</color>
+    <color name="Boto31">#0d45a4</color>
+    <color name="Boto32">#2e1672</color>
+    <color name="Boto33">#631678</color>
+    <color name="Boto34">#7a163d</color>
+    <color name="Boto35">#b70d0d</color>
+    <color name="Boto36">#af3b0d</color>
+
+
+</resources>
