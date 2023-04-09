@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="359dp"
+        android:layout_height="648dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+
+            android:layout_marginBottom="30dp"
+            app:srcCompat="@drawable/logotipo" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textViewIniciarSesion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:text="Iniciar Sesión"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textColor="@color/Color_Secundario"
+                android:textSize="34sp"
+                android:textStyle="bold"
+                tools:layout_editor_absoluteX="40dp"
+                tools:layout_editor_absoluteY="210dp" />
+
+            <TextView
+                android:id="@+id/textViewBienvenido"
+                android:layout_width="match_parent"
+                android:layout_height="34dp"
+                android:layout_marginBottom="10dp"
+                android:text="Bienvenido de nuevo!" />
+
+            <TextView
+                android:id="@+id/textViewEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Email"
+                android:textColor="@color/Color_Base"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/editTextEmailAddressInicioSesion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:ems="10"
+                android:hint="@string/Email"
+                android:inputType="textEmailAddress"
+                android:minHeight="48dp" />
+
+            <TextView
+                android:id="@+id/textViewPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Contraseña"
+                android:textAlignment="viewStart"
+                android:textColor="@color/Color_Base"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/editTextPasswordInicioSesion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:ems="10"
+                android:hint="@string/contrasena"
+                android:inputType="textPassword"
+                android:minHeight="48dp" />
+
+            />
+
+            <Button
+                android:id="@+id/buttonIniciarSesion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="30dp"
+                android:backgroundTint="@color/Color_Base"
+                android:onClick="signInFirebase"
+                android:text="@string/inicio_sesion" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/buttonRegistrarse"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#00FFFFFF"
+            android:text="Registrarse"
+            android:textColor="@color/Color_Base" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

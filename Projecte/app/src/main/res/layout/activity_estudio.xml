@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:backgroundTint="#FFFFFF">
+
+    <LinearLayout
+        android:layout_width="364dp"
+        android:layout_height="671dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/button"
+                android:layout_width="75dp"
+                android:layout_height="48dp"
+                android:backgroundTint="#FFFFFF"
+                android:foregroundTint="#FFFFFF"
+                app:icon="@drawable/ic_baseline_keyboard_backspace_48"
+                app:iconTint="@color/Color_Base"
+                tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck"
+                android:onClick="goToInicio"/>
+
+            <TextView
+                android:id="@+id/nombre_estudio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="80dp"
+                android:text="@string/Estudio"
+                android:textColor="#000000"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textView_Lyrics"
+            android:layout_width="364dp"
+            android:layout_height="257dp"
+            android:layout_gravity="center"
+            android:background="@color/Color_Gris_Claro"
+            android:backgroundTint="@color/Color_Gris_Claro"
+            android:foregroundTint="#706E6E"
+            android:gravity="center"
+            android:text="@string/letra_escogida"
+            android:textColor="@color/Color_Secundario"
+            android:textSize="14sp"
+            app:drawableTint="#787878" />
+
+        <LinearLayout
+            android:layout_width="234dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/chooseSong"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_width="48dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+
+                android:backgroundTint="#FFFFFF"
+                app:icon="@drawable/ic_baseline_format_align_center_24"
+                app:iconTint="@color/Color_Base"
+                tools:ignore="SpeakableTextPresentCheck" />
+
+
+            <Button
+                android:id="@+id/restart"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_width="49dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:backgroundTint="#FFFFFF"
+
+                app:icon="@drawable/ic_baseline_crop_square_24"
+                app:iconTint="@color/Color_Base"
+                tools:ignore="SpeakableTextPresentCheck" />
+
+            <Button
+                android:id="@+id/start"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_width="55dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:backgroundTint="#FFFFFF"
+                android:contentDescription="@string/buttonPlayFirstBase"
+
+                app:icon="@drawable/ic_baseline_circle_24"
+                app:iconTint="@color/Color_Base"
+                tools:ignore="RedundantDescriptionCheck" />
+
+            <Button
+                android:id="@+id/PauseOrResume"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_width="51dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:backgroundTint="#FFFFFF"
+                android:contentDescription="@string/apodo"
+
+                app:icon="@android:drawable/ic_media_play"
+                app:iconTint="@color/Color_Base" />
+
+            <!--<Button
+                android:id="@+id/PlayLast"
+                android:layout_width="0dp"
+                android:layout_height="55dp"
+                android:layout_weight="1"
+                android:backgroundTint="#FFFFFF"
+                android:foregroundTint="#FFFFFF"
+                android:textColor="#000000"
+                app:icon="@drawable/ic_baseline_last_page_48"
+                app:iconTint="#000000"
+                tools:ignore="ButtonStyle" />
+                -->
+        </LinearLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/listado_grabaciones_recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="20dp"
+            android:background="@color/Color_Gris_Claro"
+            android:backgroundTint="@color/Color_Gris_Claro"
+            android:foregroundTint="#8F8F8F" />
+
+
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

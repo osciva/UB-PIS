@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="363dp"
+        android:layout_height="656dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/back_letras"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="left"
+                android:layout_marginRight="40dp"
+                android:background="#00FFFFFF"
+                app:icon="@drawable/ic_baseline_keyboard_backspace_48"
+                app:iconGravity="textEnd"
+                app:iconTint="@color/Color_Base" />
+
+            <TextView
+                android:id="@+id/textView_letras"
+                android:layout_width="wrap_content"
+                android:layout_gravity="center"
+                android:layout_height="wrap_content"
+                android:text="@string/Letras"
+                android:textColor="@color/Color_Secundario"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/add_letra"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:layout_gravity="right"
+                android:layout_marginLeft="40dp"
+                android:background="#00FFFFFF"
+                android:onClick="agregarBaseDeDispositivo"
+                app:icon="@drawable/ic_baseline_add_48"
+                app:iconGravity="textEnd"
+                app:iconTint="@color/Color_Base" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+
+            android:orientation="horizontal"/>
+
+        <SearchView
+            android:id="@+id/buscar_letra"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/textView_nameletra"
+            android:layout_width="match_parent"
+            android:layout_height="38dp"
+            android:gravity="center_horizontal|center_vertical"
+            android:text="Nueva letra"
+            android:textSize="19sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/textView_editarletra"
+            android:layout_width="match_parent"
+            android:layout_height="226dp"
+            android:background="#FBDCDC"
+            android:ems="10"
+            android:gravity="start|top"
+            android:inputType="textMultiLine" />
+
+        <Button
+            android:id="@+id/button_save"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:backgroundTint="@color/Color_Base"
+            android:text="Guardar" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/listadoLetras"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="15dp" />
+
+
+
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

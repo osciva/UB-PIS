@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#00FFFFFF">
+
+    <LinearLayout
+        android:layout_width="363dp"
+        android:layout_height="656dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/back_listado"
+                android:layout_width="56dp"
+                android:layout_height="match_parent"
+                android:background="#00FFFFFF"
+                app:icon="@drawable/ic_baseline_keyboard_backspace_48"
+                app:iconGravity="textEnd"
+                app:iconTint="@color/Color_Base"
+                tools:ignore="SpeakableTextPresentCheck"/>
+
+            <TextView
+                android:id="@+id/textView_ListadoBases"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginBottom="10dp"
+                android:text="@string/listado_de_bases"
+                android:textColor="@color/Color_Secundario"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/add_base"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="#00FFFFFF"
+                app:icon="@drawable/ic_baseline_add_48"
+                app:iconGravity="textEnd"
+                app:iconTint="@color/Color_Base"
+                tools:ignore="SpeakableTextPresentCheck,SpeakableTextPresentCheck"
+                android:onClick="agregarBaseDeDispositivo"/>
+
+        </LinearLayout>
+
+        <SearchView
+            android:id="@+id/buscar_letra"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler_listado_bases"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="15dp" />
+
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
